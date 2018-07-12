@@ -1,0 +1,33 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background: url('img/beans.jpg') center;
+}
+img{
+  height: 200px;
+}
+.jumbotron{
+  background-color: rgba(0,0,0,0);
+}
+.jumbotron h1{
+  color: white;
+}
+.title{
+  border: 3px solid white;
+  text-shadow: 5px 4px 2px #000000;
+  padding: 14px;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/******* Orders ******/
+.white-text{
+  color: white;
+}
+.btn-default{
+  color: white;
+  background-color: rgba(0,0,0,.4);
+  border-color: white;
+  padding: 14px;
+  width: 138px;
+}

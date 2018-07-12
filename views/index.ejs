@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <h1 class="title">Coffee Shop</h1>
+    </div>
+    <!-- Orders -->
+    <h2 class="white-text">Orders</h2>
+    <ol class="white-text">
+    <% for(var i=0; i<orders.length; i++) {%>
+      <li class="order">
+        <span><%= orders[i].customerName %></span>
+        <span><%= orders[i].coffee %></span>
+        <span><%= orders[i].toma %></span>
+        <span><i class="fa fa-times" aria-hidden="true"></i></span>
+      </li>
+    <% } %>
+  </ol>
+    <!--Order Form  -->
+    <div class="text-center">
+      <form action="/orders" method="POST">
+        <input type="text" placeholder="Customer Name" name="customerName">
+        <select class="" name="coffee">
+          <option value="latte">Latte</option>
+          <option value="mocha">Mocha</option>
+          <option value="cappachino">Cappachino</option>
+        </select>
+        <select class="" name="toma">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <!--End Order Form  -->
+    <!--Barista Login  -->
+    <!-- <a href="/cashierLogin" class="btn btn-default"><span class="fa fa-user"></span>Cashier</a> -->
+    <a href="/baristaLogin" class="btn btn-default "><span class="fa fa-user"></span>Barista</a>
+
+
+</div>
+</body>
+</html>
