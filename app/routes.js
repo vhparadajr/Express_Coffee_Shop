@@ -113,6 +113,23 @@ module.exports = function(app, passport, db) {
             failureFlash : true // allow flash messages
         }));
 
+        //update completed
+      app.put('/completed', (req, res) => {
+        db.collection('orders')
+        .findOneAndUpdate({customerName: req.body.customerName, coffee: req.body.coffee, toma: req.body.toma, completed: false}, {
+          $set: {
+            completed: true
+          }
+        }, {
+              sort: {_id: -1},
+              upsert: true
+            }, (err, result) => {
+                if (err) return res.send(err)
+                    res.send(result)
+            })
+      })
+
+
         // SIGNUP =================================
         // show the signup form
         app.get('/signup', function(req, res) {

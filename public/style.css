@@ -1,5 +1,5 @@
 body{
-  padding-top:80px;
+  padding-top:40px;
   word-wrap:break-word;
   background: url('img/beans.jpg') center;
 }
@@ -8,6 +8,8 @@ img{
 }
 .jumbotron{
   background-color: rgba(0,0,0,0);
+  margin-top: 110px;
+  padding-bottom: 10px;
 }
 .jumbotron h1{
   color: white;
@@ -19,15 +21,39 @@ img{
   color: white;
   background-color: rgba(0,0,0,0.4);
 }
-
 /******* Orders ******/
 .white-text{
   color: white;
+  margin-top: 10px;
+}
+.text-size{
+  font-size: 1.3em;
 }
 .btn-default{
   color: white;
   background-color: rgba(0,0,0,.4);
   border-color: white;
-  padding: 14px;
+  padding: 6px;
   width: 138px;
+  border-radius: 0;
+}
+.lists{
+  width: 48%;
+  display: inline-block;
+  border: 1px solid white;
+  height: 154px;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,.4);
+  padding-left: 15px;
+}
+.marginTop{
+  margin-top: 23px;
+}
+.login{
+  float: right;
+  margin-right: 2%;
+}
+
+ul li{
+  list-style: none;
 }
