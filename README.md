@@ -21,7 +21,8 @@ An app that lets a cashier enter a customers order. On the back-end the barista 
 
 ## Optimizations
 
-When time permitting, I would like to add CSS and practice my UX design to make a more appealing/functional app. 
+- Add input for cashiers name.
+- Enhance UX
 
 ## Lessons Learned:
 - How to create a full-stack app with features that interact with the front-end and back-end
